@@ -10,7 +10,7 @@ function App() {
     setIsLoading(true);
     let data = await fetch(`https://v1.nocodeapi.com/arun007/spotify/SvkqKRJChnyhpVkN/search?q=${keyword===""?"trending":keyword}&type=track`);
     let convertedData = await data.json();
-    console.log(convertedData.tracks.items);
+    // console.log(convertedData.tracks.items);
     setTracks(convertedData.tracks.items);
     setIsLoading(false);
   }
